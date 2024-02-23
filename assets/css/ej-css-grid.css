@@ -2,6 +2,17 @@
     height:100%;
 }
 
+#container-grid {
+    display: grid;
+    grid-template:
+        "header" 100px
+        "navbar" 50px
+        "main" auto
+        "sidebar" 100px
+        "footer" 50px;
+    text-align: center;
+}
+
 /*Estilos Grid Items*/
 header {
     grid-area: header;
@@ -27,22 +38,9 @@ footer {
     grid-area: footer;
     background-color: red;
 }
-
-#container-grid {
-    display: grid;
-    grid-template:
-        "header" 100px
-        "navbar" 50px
-        "main" auto
-        "sidebar" 100px
-        "footer" 50px;
-    text-align: center;
-}
-
-
-
 body{
     min-height:100%;
+    margin: 0%;
 }
 
 /*Resolución tabletas*/
